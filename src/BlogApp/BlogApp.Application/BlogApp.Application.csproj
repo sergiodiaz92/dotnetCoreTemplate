@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.0" />
+    <PackageReference Include="MediatR" Version="12.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogApp.Domain\BlogApp.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\PostComments\Handlers\Commands\" />
+    <Folder Include="Features\PostComments\Handlers\Queries\" />
+    <Folder Include="Features\PostComments\Requests\Commands\" />
+    <Folder Include="Features\PostComments\Requests\Queries\" />
+    <Folder Include="Features\Posts\Handlers\Commands\" />
+    <Folder Include="Features\Posts\Requests\Commands\" />
+  </ItemGroup>
+
+</Project>
